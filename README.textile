@@ -1,0 +1,14 @@
+Play! Framework Slow Pages Module
+by Felipe Oliveira
+
+1) Configuration (application.conf)
+
+slowpages.max=0
+slowpages.enabled=true
+
+It tracks the execution time, if it happens to be greater than the value defines on slowpages.max it logs a warning.
+You can disable it by using the property key slowpages.enabled.
+
+If you define slowpages.max=0 it will log on every request.
+
+You can add your own listener by calling SlowPagesPlugin.addListener().
