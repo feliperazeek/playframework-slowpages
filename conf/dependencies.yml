@@ -1,0 +1,4 @@
+self: play -> slowpages 0.1
+
+require:
+    - play
